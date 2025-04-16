@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: casadocodigo
+
+  datasource:
+    url: jdbc:h2:mem:casadocodigo
+    username: sa
+    password: ""
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    show-sql: true
